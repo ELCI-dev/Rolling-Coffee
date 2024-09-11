@@ -1,0 +1,111 @@
+.form_body{
+    margin: 0;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #f5efea ;
+    background-size: cover;
+    font-weight: bolder;
+    color: var(--colorFormBody);
+}
+.form_container{
+    background: #c29d87;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+    max-width: 600px;
+    width: 100%;
+}
+.adoption_form{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+.adoption_form_title{
+    text-align: center;
+    font-size: 1.4em;
+    margin-bottom: 10px;
+}
+.form_row{
+    display: flex;
+    gap: 15px;
+}
+
+.form_group{
+    flex: 1;
+    display: flex;
+    flex-direction:column;
+}
+label{
+    margin-bottom: 10px;
+    font-size: 0.9em;
+}
+input, textarea{
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1em;
+}
+textarea{
+    resize: vertical;
+    height: 80px;
+}
+.form_buttons{
+    display: flex;
+    justify-content: space-between;
+}
+.cancel_button{
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    font-size: 1em;
+    cursor: pointer;
+    background-color: #c4b2b2;
+    &:hover{
+        background-color: #f5ac7b;
+        outline:2px solid white;
+        color: white;
+    }
+}
+.submit_button{
+    background-color: var(--colorBtnRegistro);
+    font-weight: bold;
+    font-size: 1em;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    color: white;
+    &:hover{
+        outline: 2px solid white;
+        background-color: var(--coloresBotones);
+    }
+}
+@media (max-width:768){
+    .form_body{
+
+        background-size: contain;
+    }
+    
+}
+@media(max-width:480px){
+    .form_body{
+        margin: 100px auto;
+    }
+    .form_row{
+        flex-direction: column;
+    }
+    .form_group{
+        width: 100%;
+    }
+    .form_buttons{
+        flex-direction: column;
+        gap: 10px;
+    }
+    .form_buttons a, .form_buttons button{
+        width: 100%;
+        text-align: center;
+    }
+}
