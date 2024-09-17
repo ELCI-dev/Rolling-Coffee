@@ -1,0 +1,20 @@
+.figure-histocafe {
+    float: left;
+    width: 30%;
+    text-align: right;
+    font-style: italic;
+    font-size: smaller;
+    margin: 0.5em;
+    padding: 0.5em;
+}
+
+.subtitle-histocafe{
+    font-size: 1.2rem;
+}
+
+@media (max-width: 768px){
+    .ad-section-histocafe{
+        display: none;
+    }
+}
+
