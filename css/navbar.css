@@ -62,3 +62,6 @@ nav ul :nth-child(4){
         border-radius: 0%;
     }
 }
+.modalRegistro{
+    background-color:var(--colorTiza);
+}

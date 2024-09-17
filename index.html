@@ -55,32 +55,110 @@
                 <div class="modal-content">
 
                     <div class="modal-header">
-                        <h5 class="modal-title">Registrarse</h5>
+                        <h5 class="modal-title ">Registrarse</h5>
                         <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="cerrar"></button>
                     </div>
 
-                    <div class="modal-body">
+                    <div class=" modalRegistro modal-body">
 
                         <!-- AQUI VA EL FORMULARIO -->
 
-                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Fuga atque impedit voluptatem est molestias nobis earum quia facere repellendus voluptates totam, quo inventore ipsam reprehenderit obcaecati delectus? Pariatur, ex delectus?
-                        Asperiores beatae suscipit totam et, fuga quidem recusandae explicabo! Qui, aliquam laborum! Earum dignissimos velit facilis nihil quod voluptas, consectetur veniam, perferendis exercitationem assumenda voluptates beatae, quasi natus doloribus eligendi.
-                        Similique omnis maiores distinctio voluptas eius nostrum inventore aliquid qui soluta deserunt quam vitae at itaque numquam eaque pariatur laudantium perferendis natus, ut amet recusandae. Corrupti nemo magni eos sequi. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Temporibus saepe accusamus similique praesentium architecto, odio incidunt dolorum voluptate, autem tempora amet, eaque dolores! Quis repellat inventore nisi impedit debitis eligendi!
-                        Minima labore blanditiis modi placeat rerum, repellendus, praesentium reprehenderit beatae harum officiis in laborum nesciunt quia natus consectetur ea aperiam consequatur corrupti. Corporis labore et, velit nisi nulla nostrum excepturi!
-                        Voluptates pariatur et ut reiciendis est nulla animi alias? Molestiae pariatur sapiente eum rerum blanditiis placeat dolore voluptatibus adipisci commodi doloribus. Tenetur eius reprehenderit blanditiis, exercitationem ipsum similique veniam architecto.
-                        Sit accusamus animi repudiandae quia impedit officiis, dolorum architecto laboriosam ad cum enim nobis at corrupti eligendi magni commodi voluptatem provident aspernatur dolores qui! Perferendis quia quaerat iure tempora quod.
-                        Voluptatum placeat minus numquam dolore ullam nisi debitis harum, veritatis qui! Quos quasi labore alias est possimus quibusdam dolores sed! Quo, eligendi quam. Aperiam dolores libero eos, eum minus vel.
-                        Sit velit similique possimus consequuntur, commodi ad laudantium eligendi expedita impedit voluptatum culpa ullam illo rem voluptate sint ducimus ea itaque suscipit? Unde nemo dolores ipsam doloremque nobis molestiae minima!
-                        Quam reprehenderit repellendus eveniet, quaerat odio quasi non corrupti, quas laudantium necessitatibus reiciendis dolorem incidunt quae architecto, ut nemo culpa beatae illo fugit voluptatum eius aperiam. Eaque debitis ab ducimus.
-                        Enim expedita hic ducimus natus ex odit deserunt facere obcaecati error inventore recusandae numquam temporibus ea sed sunt optio exercitationem, eveniet quasi, placeat sint neque incidunt ratione fugit. Nisi, repellendus.</p>
-                    </div>
+                        <div class="container">
+                          <form class="row g-3 mt-3">
+                                  <!-- Nombre -->
+                              <div class="col-md-6">
+                                  <label for="nombre" class="form-label">Nombre</label>
+                                  <input type="text" class="form-control" id="nombre" placeholder="Ingresa tu nombre" pattern="^[A-Za-zÁÉÍÓÚáéíóúÑñ]+$" required>
+                              </div>
+                                  <!-- Apellido -->
+                              <div class="col-md-6">
+                                  <label for="apellido" class="form-label">Apellido</label>
+                                  <input type="text" class="form-control" id="apellido" placeholder="Ingresa tu apellido" pattern="^[A-Za-zÁÉÍÓÚáéíóúÑñ]+$" required>
+                              </div>
+                                  <!-- Nombre de usuario -->
+                              <div class="col-md-6">
+                                  <label for="nombreUsuario" class="form-label">Nombre de usuario</label>
+                                  <input type="text" class="form-control" id="nombreUsuario" placeholder="Nombre de usuario" pattern="^[a-zA-Z0-9._-]{3,16}$
+                                  " required>
+                              </div>
+                                  <!--Email  -->
+                              <div class="col-md-6">
+                                  <label for="emailInupt" class="form-label">Email</label>
+                                  <input type="email" class="form-control" id="emailInupt" placeholder="Example@example" pattern="^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$" required>
+                              </div>
+                                  <!-- Password -->
+                              <div class="col-md-6 ">
+                                  <label for="inputPass" class="form-label">Contraseña</label>
+                                  <input type="password" class="form-control" id="inputPass" placeholder="Escribe tu contraseña" pattern="^(?=.*[A-Za-z])(?=.*\d)[A-Za-z\d]{8,}$" required>
+                              </div>
+                              <div class="col-md-6 ">
+                                  <label for="inputPass" class="form-label">Repita Contraseña</label>
+                                  <input type="password" class="form-control" id="inputPass" placeholder="Repita contraseña" pattern="^(?=.*[A-Za-z])(?=.*\d)[A-Za-z\d]{8,}$" required>
+                              </div>
+                                  <!-- Dato postales -->
+                              <div class="col-md-6">
+                                  <label for="cityInput" class="form-label">Ciudad</label>
+                                  <input type="text" class="form-control" id="cityInput" placeholder="Tu ciudad" pattern="^[A-Za-zÁÉÍÓÚáéíóúÑñ]+(?:[\s-][A-Za-zÁÉÍÓÚáéíóúÑñ]+)*$">
+                              </div>
+                      
+                              <div class="col-md-3">
+                                  <label for="paisInput" class="form-label">Pais</label>
+                                  <input type="text" class="form-control" id="paisInput" placeholder="Pais" pattern="^[A-Za-zÁÉÍÓÚáéíóúÑñ]+(?:[\s-][A-Za-zÁÉÍÓÚáéíóúÑñ]+)*$">
+                                  <!-- <select class="form-select " aria-label="Default select example" id="paisInput">
+                                    <option selected>Pais</option>
+                                    <option value="1">Argentina</option>
+                                    <option value="2">Brasil</option>
+                                    <option value="3">Uruguay</option>
+                                    <option value="1">Chile</option>
+                                    <option value="2">Bolivia</option>
+                                    <option value="3">Peru</option> -->
+                              </div>
+                              <div class="col-md-3">
+                                  <label for="postalCodeeInput" class="form-label">C. P.</label>
+                                  <input type="text" class="form-control" id="postalCodeeInput" placeholder="1234" pattern="^\d{4}$
+                                  ">
+                              </div>
+                                  <!-- checkbox -->
+                              <div class="form-check col-md-12">
+                                  <input class="form-check-input" type="checkbox" id="terminos" required>
+                                  <label class="form-check-label" for="terminos">
+                                  Acepto los <a href="#">términos y condiciones</a>
+                                  </label>
+                              </div>
+                      
+                              <div class="form-check col-md-12">
+                                  <input class="form-check-input" type="checkbox" id="notificaciones">
+                                  <label class="form-check-label" for="notificaciones">
+                                  Deseo recibir notificaciones
+                                  </label>
+                              </div>
+                      
+                              <div class=" col-md-6 col-md-12 d-flex justify-content-center">
+                                  <button type="submit" class="btn btn-primary w-50 mb-3">Registrarse</button>
+                              </div>
+                              <div class="row g-4">
+                                  <div class="col-md-6">
+                                      <button type="button" class="btn btn-outline-primary w-100 mb-2">
+                                          <i class="fa-brands fa-facebook"></i>  Facebook
+                                      </button>
+                                  </div>
+                                  <div class="col-md-6">
+                                      <button type="button" class="btn btn-outline-danger w-100">
+                                          <i class="fa-brands fa-google"></i>  Google
+                                      </button>
+                                  </div>
+                              </div>
+                          </form>
+                      </div>
+                      
+                      
 
                     <div class="modal-footer">
 
                         <!-- USAR ESTOS BOTONES PARA CONFIRMAR EL FORMULARIO -->
 
-                        <button type="button" class="btn" data-bs-dismiss="modal">Cancelar</button>
-                        <button type="button" class="btn">Confirmar</button>
+                        <!-- <button type="button" class="btn" data-bs-dismiss="modal">Cancelar</button> -->
+                        <!-- <button type="button" class="btn" >Confirmar</button> -->
                     </div>
 
                 </div>
