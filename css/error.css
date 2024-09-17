@@ -1,0 +1,19 @@
+*{
+  background-color: #f5efea;
+   margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.error_img {
+  height: 500px;
+  margin-bottom: 10px;
+}
+.btn{
+  background: #5d2e1d ;
+}
+.main-content {
+  padding: 20px;
+  margin-bottom: 10px 10px;
+  background-color: #f5efea ;
+  text-align: center;
+}
