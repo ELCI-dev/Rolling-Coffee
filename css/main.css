@@ -1,3 +1,31 @@
+
+@media (max-width: 768px){
+    .ad-section{
+        display: none;
+    }
+}
+
+.container{
+    margin-top: 8%;
+}
+.img-card{
+    overflow: hidden;
+}
+.img-card img{
+    transition: all 1.5s ease;
+}
+.img-card:hover img{
+    transform: scale(1.5);
+}
+.card-s{
+    transition: all 400ms ease;
+}
+
+.card-s:hover{
+    /* box-shadow: 10px 10px 40px rgba(0, 0, 0, 0.4); */
+    transform: translateY(-3%);
+}
+
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
 
 .carousel-item{
@@ -31,3 +59,4 @@
     img:hover{
     border: 5px solid --colorTiza;
     }
+
