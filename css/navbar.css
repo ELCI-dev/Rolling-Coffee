@@ -1,0 +1,68 @@
+nav{
+    background-color: var(--colorMarroc);
+    height: 10vh;
+    z-index: 99;
+    font-family: var(--tipografiaGeneral);
+    font-size: 1.1rem;
+    font-weight: bolder;
+}
+
+
+
+.icon-link{
+    color: var(--colorTiza);
+    &:hover{
+    color: var(--colorTiza);
+    }
+}
+
+nav li a{
+    &:hover{
+        background-color: var(--colorMarrocClaro);
+        border-radius: 8%;
+    }
+}
+
+.nav-link{
+    color: var(--colorTiza);
+    &:hover{
+        color: var(--colorTiza);
+        background-color: var(--colorMarrocClaro);
+        border-radius: 8%;
+    }
+}
+
+nav ul :nth-child(4){
+    background-color: var(--colorDulcedeLeche);
+    border-radius: 8%;
+
+}
+
+@media (width<992px){
+
+    .navbar-collapse{
+        background-color: var(--colorMarroc);
+        margin-right: 0%;
+        text-align: center;
+    }
+    
+    nav li a{
+        &:hover{
+            border-radius: 0%;
+        }
+    }
+
+    .nav-link{
+        &:hover{
+            border-radius: 0%;
+        }
+    }
+    
+    nav ul :nth-child(4){
+        border-radius: 0%;
+    }
+}
+.modalRegistro{
+    background-color:var(--colorTiza);
+
+}
