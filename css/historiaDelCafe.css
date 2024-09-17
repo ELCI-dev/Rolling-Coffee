@@ -1,4 +1,4 @@
-.figure {
+.figure-histocafe {
     float: left;
     width: 30%;
     text-align: right;
@@ -8,12 +8,12 @@
     padding: 0.5em;
 }
 
-.blog-post-subtitle{
+.subtitle-histocafe{
     font-size: 1.2rem;
 }
 
 @media (max-width: 768px){
-    .ad-section{
+    .ad-section-histocafe{
         display: none;
     }
 }
