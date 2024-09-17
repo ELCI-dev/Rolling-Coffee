@@ -1,0 +1,57 @@
+.container-fluid{
+    
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    background: var(--colorChocolate);
+    background-size: cover;
+    font-weight: bolder;
+    color: var(--colorTiza);
+}
+.titular{
+    color: var(--colorChocolate);
+}
+
+.form-row{
+    
+    display: flex;
+    gap: 7px;
+}
+.control,label{
+    color: var(--colorChocolate);
+}
+.label{
+    margin-bottom: 10px;
+    font-size: 0.9rem;
+}
+input, textarea{
+    padding: 8px;
+    border: 1px solid var(--colorTiza);
+    border-radius: 5px;
+    font-size: 1em;
+}
+textarea{
+    resize: vertical;
+    height: 80px;
+} 
+
+
+
+.submit-button{
+    margin-top: 10px;
+    background-color: var(--colorChocolate);
+    font-weight: bolder;
+    padding: 10px 15px;
+    border-style: outset;
+    border-color: var(--colorTiza);
+    border-radius: 5px;
+    color: var(--colorTiza);
+    outline: var(--colorTiza);
+    cursor: pointer;
+    &:hover{
+        background-color: var(--colorMarrocClaro);
+         outline: 2px solid white;
+         color: white;
+}
+}
+
