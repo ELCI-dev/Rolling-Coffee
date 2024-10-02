@@ -1,15 +1,16 @@
 
+/* tamaño  del carousel */
 
-
-.carousel-item img{
+.carrusel-item img{
     width: 100%;
     height: 80vh;
     object-fit: cover;
     z-index: 0;
     position: relative;
     display: block;
+    
     }
-
+/* -------- */
 
 
     
@@ -26,14 +27,16 @@
     .subtitular{
         color: var(--colorChocolate);
     }
-    img{
+    .img-conten img{
         width: 100%;
-        height: 250px;
-        gap: 20px;
-        padding-top: 10px;
+        height: 100%;
+        gap: 100px;
+        padding-top: 20px;
     }
-    img:hover{
-    border: 5px solid --colorTiza;
+    .img-conten img:hover{
+    border: 5px solid  --colorTiza;
+    transition: all 400ms ease;
+    transform: translateY(-3%);
     }
 /* animaciones de section */
     @media (max-width: 768px){
@@ -61,4 +64,11 @@
     .card-s:hover{
         /* box-shadow: 10px 10px 40px rgba(0, 0, 0, 0.4); */
         transform: translateY(-3%);
+    }
+
+    @media (max-width: 768px){
+        .carrusel-item img{ 
+            max-height: 300px;
+        }
+
     }
