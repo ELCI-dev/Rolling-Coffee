@@ -6,9 +6,9 @@
     --tipografiaGeneral: 'Roboto';}
 
 
-p {
+/* p {
     color:  #f5efea ;
-}
+} */
 
 h2 {
 
@@ -51,13 +51,13 @@ h2 {
     
 }
 
-.fa-facebook {
+/* .fa-facebook {
 
     font-size: 24px;
     margin-top: 25px;
     margin-bottom: 25px;
     
-}
+} */
 
 .fa-instagram {
     font-size: 24px;
